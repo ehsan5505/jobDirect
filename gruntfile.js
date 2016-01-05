@@ -263,6 +263,9 @@ module.exports = function (grunt) {
     mongoose.connect(function (db) {
       done();
     });
+
+      //mongoose.connect("mongodb://ehsan5505:$Ehsan5505@ds039145.mongolab.com:39145/job-direct");
+  
   });
 
   // Drops the MongoDB database, used in e2e testing
