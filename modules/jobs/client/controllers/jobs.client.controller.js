@@ -18,7 +18,11 @@ angular.module('jobs').controller('JobsController', ['$scope', '$stateParams', '
       // Create new Job object
       var job = new Jobs({
         title: this.title,
-        content: this.content
+        descriptions: this.descriptions,
+        requirements: this.requirements,
+        company: this.company,
+        state: this.state,
+        email: this.email
       });
 
       // Redirect after save
@@ -27,7 +31,12 @@ angular.module('jobs').controller('JobsController', ['$scope', '$stateParams', '
 
         // Clear form fields
         $scope.title = '';
-        $scope.content = '';
+        $scope.descriptions = '';
+        $scope.requirements = '';
+        $scope.company = '';
+        $scope.state = '';
+        $scope.email = '';
+        
       }, function (errorResponse) {
         $scope.error = errorResponse.data.message;
       });

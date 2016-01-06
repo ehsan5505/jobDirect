@@ -12,7 +12,7 @@
         <span ng-if="!job.user">Deleted User</span>
       </small>
       <h4 class="list-group-item-heading" ng-bind="job.title"></h4>
-      <p class="list-group-item-text" ng-bind="job.content"></p>
+      <p class="list-group-item-text" ng-bind="job.descriptions"></p>
     </a>
   </div>
   <div class="alert alert-warning text-center" ng-if="jobs.$resolved && !jobs.length">

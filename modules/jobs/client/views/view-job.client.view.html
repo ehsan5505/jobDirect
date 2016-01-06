@@ -19,5 +19,13 @@
       <span ng-if="!job.user">Deleted User</span>
     </em>
   </small>
-  <p class="lead" ng-bind="job.content"></p>
+  <p class="lead" ng-bind="job.descriptions"></p>
+  <div>
+    <h3 class="text-info" ng-bind="job.company"></h3>
+    <p><strong>Requirements:</strong><em ng-bind="job.requirements"></em></p>
+
+    <p><strong>Pay:</strong><em ng-bind="job.pay"></em></p>
+    <p><strong>Location:</strong><em ng-bind="job.state"></em></p>
+    <p><strong>Email:</strong><em ng-bind="job.email"></em></p>
+  </div>
 </section>

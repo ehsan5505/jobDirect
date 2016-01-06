@@ -12,10 +12,40 @@
             <p class="help-block error-text" ng-message="required">Job title is required.</p>
           </div>
         </div>
-        <div class="form-group">
-          <label for="content">Content</label>
-          <textarea name="content" ng-model="job.content" id="content" class="form-control" cols="30" rows="10" placeholder="Content"></textarea>
+
+        <div class="form-group" show-errors>
+          <label for="company">Company</label>
+          <input name="company" type="text" ng-model="job.company" id="title" class="form-control" placeholder="Company" required>
+          <div ng-messages="jobForm.company.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Job Company is required.</p>
+          </div>
         </div>
+          
+        <div class="form-group">
+          <label for="descriptions">Descriptions</label>
+          <textarea name="descriptions" ng-model="job.descriptions" id="content" class="form-control" cols="30" rows="10" placeholder="Descriptions"></textarea>
+        </div>
+        
+        <div class="form-group" show-errors>
+          <label for="requirements">Descriptions</label>
+          <input name="requirements" type="text" ng-model="job.requirements" id="title" class="form-control" placeholder="Requirements" required>
+        </div>
+        
+        <div class="form-group" show-errors>
+          <label for="pay">Pay</label>
+          <input name="pay" type="text" ng-model="job.pay" id="title" class="form-control" placeholder="Pay" required>
+        </div>
+        
+        <div class="form-group" show-errors>
+          <label for="state">Location</label>
+          <input name="state" type="text" ng-model="job.state" id="title" class="form-control" placeholder="Locations" required>
+        </div>
+        
+        <div class="form-group" show-errors>
+          <label for="email">Email</label>
+          <input name="email" type="email" ng-model="job.email" id="title" class="form-control" placeholder="Email" required>
+        </div>
+
         <div class="form-group">
           <input type="submit" value="Update" class="btn btn-default">
         </div>

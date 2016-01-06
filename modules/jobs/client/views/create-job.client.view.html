@@ -12,16 +12,46 @@
             <p class="help-block error-text" ng-message="required">Job title is required.</p>
           </div>
         </div>
-        <div class="form-group">
-          <label for="content">Content</label>
-          <textarea name="content" ng-model="content" id="content" class="form-control" cols="30" rows="10" placeholder="Content"></textarea>
+
+        <div class="form-group" show-errors>
+          <label for="company">Company</label>
+          <input name="company" type="text" ng-model="company" id="title" class="form-control" placeholder="Company" required>
         </div>
+
+        <div class="form-group">
+          <label for="descriptions">Descriptions</label>
+          <textarea name="descriptions" ng-model="descriptions" id="content" class="form-control" cols="30" rows="10" placeholder="Descriptions"></textarea>
+        </div>
+        
+        <div class="form-group" show-errors>
+          <label for="requirements">Requirements</label>
+          <input name="requirements" type="text" ng-model="requirements" id="title" class="form-control" placeholder="Requirements" required>
+        </div>
+
+        <div class="form-group" show-errors>
+          <label for="pay">Pay</label>
+          <input name="pay" type="number" ng-model="pay" id="title" class="form-control" placeholder="pay" required>
+        </div>
+        
+        <div class="form-group" show-errors>
+          <label for="state">Location</label>
+          <input name="state" type="text" ng-model="state" id="title" class="form-control" placeholder="Locations" required>
+        </div>
+
+        <div class="form-group" show-errors>
+          <label for="Email">Email</label>
+          <input name="email" type="email" ng-model="email" id="title" class="form-control" placeholder="Email" required>
+        </div>
+
         <div class="form-group">
           <input type="submit" class="btn btn-default">
         </div>
         <div ng-show="error" class="text-danger">
           <strong ng-bind="error"></strong>
         </div>
+
+        </div>
+
       </fieldset>
     </form>
   </div>
